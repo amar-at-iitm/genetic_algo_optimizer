@@ -1,0 +1,16 @@
+{
+  "machines": ["M0", "M1"],
+  "jobs": {
+    "J0": {"processing_times": {"M0": 5, "M1": 7}, "profit": 100, "deadline": 20},
+    "J1": {"processing_times": {"M0": 6, "M1": 4}, "profit": 120, "deadline": 25},
+    "J2": {"processing_times": {"M0": 8, "M1": 9}, "profit": 150, "deadline": 30},
+    "J3": {"processing_times": {"M0": 3, "M1": 6}, "profit": 80, "deadline": 15}
+  },
+  "precedence": [
+    ["J0", "J2"]
+  ],
+  "penalties": {
+    "lateness_per_unit": 2,
+    "violation": 10000
+  }
+}
