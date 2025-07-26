@@ -35,7 +35,7 @@ The goal is to generate a schedule that assigns each job to a machine and a star
 
 ```
 
-/industrial-ga/
+/genetic_algo_optimizer/
 ├── README.md
 ├── requirements.txt
 ├── /src
@@ -60,8 +60,8 @@ The goal is to generate a schedule that assigns each job to a machine and a star
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/industrial-ga.git](https://github.com/your-username/industrial-ga.git)
-    cd industrial-ga
+    git clone https://github.com/amar-at-iitm/genetic_algo_optimizer
+    cd genetic_algo_optimizer
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
@@ -169,22 +169,7 @@ The solver's performance is measured by:
 3.  **Robustness**: The variance in results across 10 independent runs of the GA.
 4.  **Constraint Violations**: Must be zero in all final, accepted schedules.
 
-### Key Findings
 
-  * The GA consistently **outperforms the greedy baseline** on all metrics for the medium and large datasets.
-  * **NSGA-II** successfully generates a Pareto front, showing the trade-off between maximizing profit and minimizing makespan.
-  * Convergence plots show stable improvement over generations, typically converging within 200-500 generations depending on problem size.
-
------
-
-##  Future Work
-
-  * Implement more sophisticated crossover/mutation operators (e.g., Precedence Preserving Crossover).
-  * Add support for dynamic events, like machine breakdowns or new job arrivals.
-  * Integrate a more advanced local search heuristic to create a Memetic Algorithm.
-  * Develop a simple web-based dashboard for interactive visualization of the final schedule.
-
------
 
 ##  License
 
